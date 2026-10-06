@@ -8,8 +8,9 @@ plugins can be added under `plugins/` and registered in
 
 ### `sabre-flights-table`
 
-Adds a skill that tells Cursor and Grok Bot how to render flight-search results
-from the existing **Sabre Flights (unstable)** MCP server as Markdown tables.
+Adds skills that tell Cursor and Grok Bot how to render flight-search and
+trip-plan results from the existing **Sabre Flights (unstable)** MCP server as
+Markdown tables.
 
 The plugin intentionally does not contain:
 
@@ -34,7 +35,9 @@ The authenticated MCP connection remains managed by Cursor.
         │   └── plugin.json
         ├── README.md
         └── skills/
-            └── sabre-flight-results-table/
+            ├── sabre-flight-results-table/
+            │   └── SKILL.md
+            └── sabre-trip-plan-result/
                 └── SKILL.md
 ```
 

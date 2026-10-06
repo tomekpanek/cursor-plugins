@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Private Cursor plugins for travel workflows.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
       "name": "sabre-flights-table",
       "source": "sabre-flights-table",
-      "description": "Render results from the existing Sabre Flights MCP as concise Markdown tables."
+      "description": "Render Sabre flight search and trip-plan results as concise Markdown tables."
     }
   ]
 }

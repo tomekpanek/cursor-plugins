@@ -132,15 +132,15 @@ in the response or otherwise available from a reliable configured tool.
 
 ## Offer references
 
-Keep the mapping between the displayed option number and the Sabre offer `id`.
-After the table, include a compact reference line when a follow-up operation may
-need it:
+Keep the mapping between the displayed option number and the Sabre offer `id`
+internally for follow-up operations such as `add_flight_to_trip_plan`.
 
-```text
-Identyfikatory ofert: opcja 1 — `1`, opcja 2 — `7`.
-```
+Do not display offer identifiers to the traveler. In particular, never append
+an `Identyfikatory ofert` section or expose UUIDs after the results table. The
+traveler selects offers by their displayed option number, for example
+`opcja 1` or `pierwsza`.
 
-Never invent, shorten, or modify an offer identifier.
+Never invent, shorten, or modify an offer identifier when using it internally.
 
 ## Missing data and diagnostics
 
