@@ -1,0 +1,16 @@
+{
+  "name": "sabre-flights-table",
+  "version": "0.1.0",
+  "description": "Render Sabre Flights MCP search results as concise Markdown tables.",
+  "author": {
+    "name": "Tomek"
+  },
+  "keywords": [
+    "sabre",
+    "flights",
+    "travel",
+    "rendering",
+    "mcp"
+  ],
+  "skills": "./skills/"
+}
