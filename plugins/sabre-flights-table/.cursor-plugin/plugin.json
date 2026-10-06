@@ -1,7 +1,7 @@
 {
   "name": "sabre-flights-table",
-  "version": "0.2.0",
-  "description": "Render Sabre flight search and trip-plan results as concise Markdown tables.",
+  "version": "0.3.0",
+  "description": "Render Sabre flight search, trip-plan, and traveler-information workflows.",
   "author": {
     "name": "Tomek"
   },

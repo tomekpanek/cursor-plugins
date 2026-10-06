@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Private Cursor plugins for travel workflows.",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "pluginRoot": "plugins"
   },
   "plugins": [

@@ -9,7 +9,8 @@ an agent should:
 - turn the raw `air_search` response into a compact Markdown comparison table,
 - preserve the selected option and call `add_flight_to_trip_plan`,
 - render the resulting Trip Plan status, validation, warnings, ID, and checkout
-  link without overstating what Sabre returned.
+  link without overstating what Sabre returned,
+- render and validate the traveler-information form requested during checkout.
 
 ## Prerequisite
 
@@ -26,4 +27,7 @@ Cursor. The MCP must expose the `air_search` tool.
 - never invents absent baggage or fare-rule information,
 - renders `ADDED` and `UNAVAILABLE` trip-plan outcomes separately,
 - distinguishes a price remembered from search from a price explicitly returned
-  by a later MCP response.
+  by a later MCP response,
+- collects traveler details only when checkout requests
+  `travelersInformation`,
+- validates and confirms normalized values before sending them to Sabre.
