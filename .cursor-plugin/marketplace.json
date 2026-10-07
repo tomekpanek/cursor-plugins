@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Private Cursor plugins for travel workflows.",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
@@ -13,6 +13,11 @@
       "name": "sabre-flights-table",
       "source": "sabre-flights-table",
       "description": "Render Sabre flight search and trip-plan results as concise Markdown tables."
+    },
+    {
+      "name": "sabre-flights-tomek",
+      "source": "sabre-flights-tomek",
+      "description": "Connect to Tomek's Sabre Flights MCP and render search, trip-plan, and checkout workflows."
     }
   ]
 }

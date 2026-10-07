@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "sabre-flights-tomek": {
+      "url": "https://grok-air-mcp-tomek-884114690077.us-central1.run.app/mcp",
+      "auth": {
+        "CLIENT_ID": "${SABRE_MCP_CLIENT_ID}",
+        "CLIENT_SECRET": "${SABRE_MCP_CLIENT_SECRET}",
+        "scopes": [
+          "openid",
+          "email",
+          "profile",
+          "offline_access"
+        ]
+      }
+    }
+  }
+}

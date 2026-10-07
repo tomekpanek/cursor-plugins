@@ -4,7 +4,7 @@ This repository is structured as a multi-plugin Cursor marketplace. Additional
 plugins can be added under `plugins/` and registered in
 `.cursor-plugin/marketplace.json`.
 
-## Included plugin
+## Included plugins
 
 ### `sabre-flights-table`
 
@@ -23,6 +23,18 @@ The plugin intentionally does not contain:
 The Sabre MCP must already be configured and enabled in the Cursor dashboard.
 The authenticated MCP connection remains managed by Cursor.
 
+### `sabre-flights-tomek`
+
+Provides the same flight-search, Trip Plan, and traveler-form workflows, but
+also installs a remote MCP connection to:
+
+```text
+https://grok-air-mcp-tomek-884114690077.us-central1.run.app/mcp
+```
+
+OAuth Client ID and Client Secret are configured as protected plugin variables
+in Cursor. Their values are not stored in this repository.
+
 ## Repository layout
 
 ```text
@@ -30,17 +42,23 @@ The authenticated MCP connection remains managed by Cursor.
 ├── .cursor-plugin/
 │   └── marketplace.json
 └── plugins/
-    └── sabre-flights-table/
+    ├── sabre-flights-table/
+    │   ├── .cursor-plugin/
+    │   │   └── plugin.json
+    │   ├── README.md
+    │   └── skills/
+    │       ├── sabre-flight-results-table/
+    │       ├── sabre-trip-plan-result/
+    │       └── sabre-traveler-form/
+    └── sabre-flights-tomek/
         ├── .cursor-plugin/
         │   └── plugin.json
+        ├── mcp.json
         ├── README.md
         └── skills/
-            ├── sabre-flight-results-table/
-            │   └── SKILL.md
-            ├── sabre-trip-plan-result/
-            │   └── SKILL.md
-            └── sabre-traveler-form/
-                └── SKILL.md
+            ├── sabre-tomek-flight-results-table/
+            ├── sabre-tomek-trip-plan-result/
+            └── sabre-tomek-traveler-form/
 ```
 
 ## Adding another plugin

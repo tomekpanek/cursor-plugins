@@ -1,0 +1,38 @@
+{
+  "name": "sabre-flights-tomek",
+  "version": "0.1.0",
+  "description": "Connect to Tomek's Sabre Flights MCP and render flight search, Trip Plan, and checkout workflows.",
+  "author": {
+    "name": "Tomek"
+  },
+  "keywords": [
+    "sabre",
+    "flights",
+    "travel",
+    "checkout",
+    "mcp"
+  ],
+  "mcpServers": "./mcp.json",
+  "skills": "./skills/",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "SABRE_MCP_CLIENT_ID": {
+        "type": "string",
+        "title": "Sabre Okta OAuth Client ID",
+        "description": "Client ID of the OAuth application used by Cursor to authenticate to the Sabre Flights MCP.",
+        "minLength": 1
+      },
+      "SABRE_MCP_CLIENT_SECRET": {
+        "type": "string",
+        "title": "Sabre Okta OAuth Client Secret",
+        "description": "Client Secret of the OAuth application used by Cursor. Store it only in Cursor's protected plugin configuration.",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "SABRE_MCP_CLIENT_ID",
+      "SABRE_MCP_CLIENT_SECRET"
+    ]
+  }
+}
